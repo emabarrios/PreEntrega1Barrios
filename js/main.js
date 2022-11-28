@@ -17,16 +17,23 @@ function tipoServicio(){
     3. cambio de cubiertas.`);
     switch (servicio){
         case "1":
-        alert(`Has seleccionado Cambio de filtro. Le enviaremos un mail con detalles de su turno.`);
+        alert(`Has seleccionado Cambio de filtro.`);
         break;
         case "2":
-        alert(`Has seleccionado Cambio de aceite. Le enviaremos un mail con detalles de su turno.`);
+        alert(`Has seleccionado Cambio de aceite.`);
         break;
         case "3":
-        alert(`Has seleccionado Cambio de cubiertas. Le enviaremos un mail con detalles de su turno.`);
+        alert(`Has seleccionado Cambio de cubiertas.`);
         break;
         default:
             alert(`Ingrese un valor correcto`);
             break;
         }
     }
+let anticipo = prompt(`${usuario} Debes abonar un anticipo de 3000 pesos`);
+
+if (anticipo >= 3000 ){
+    alert(`Gracias ${usuario}! llegará un correo a tu casilla con la información de tu turno asignado.`)
+}else {
+    alert("Debes abonar el anticipo necesario para realizar una reserva.")
+}
