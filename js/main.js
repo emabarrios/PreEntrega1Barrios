@@ -1,7 +1,7 @@
 
 let cliente = prompt("Bienvenido. Es usted cliente? Si / No");
 
-if (cliente == "si" || cliente == "SI" || cliente == "Si"){
+if (cliente.toLowerCase() == "si"){
     usuario = prompt("Ingrese su nombre de usuario");
     tipoServicio();
 }else {
